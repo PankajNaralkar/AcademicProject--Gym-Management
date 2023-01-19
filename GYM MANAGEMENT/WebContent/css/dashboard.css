@@ -1,0 +1,379 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body {
+    background-color: beige;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+   display: none;
+}
+  
+body {
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.dashboard .sidebar {
+    padding: 0px 10px;
+    flex: 0.2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard .sidebar .profile {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.dashboard .sidebar .links {
+    flex: 1;
+    width: 100%;
+}
+
+.dashboard .sidebar .links a {
+    text-decoration: none;
+}
+
+.dashboard .sidebar .links .link {
+    text-align: center;
+    padding: 15px 30px;
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #303030;
+    border-radius: 5px;
+    box-shadow: inset 0px 2px 10px rgba(218, 89, 230, 0.2);
+    
+}
+
+.dashboard .sidebar .links .link:hover {
+    color: #fff;
+}
+
+.dashboard .sidebar .links .link::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-color: rgba(255, 166, 0, 0.466);
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 5px;
+    transition: transform 200ms ease;
+}
+
+.dashboard .sidebar .links .link:hover::after {
+    transform: scaleX(1);
+}
+
+.dashboard .sidebar .logout {
+    width: 100%;
+}
+
+.dashboard .sidebar .logout a {
+    text-decoration: none;
+}
+
+.dashboard .sidebar .logout a .link {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px 30px;
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+    color: #303030;
+    border-radius: 5px;
+    color: #ff4646;
+    box-shadow: inset 0px 2px 10px rgba(235, 38, 38, 0.438);
+}
+
+.dashboard .sidebar .logout a:hover .link {
+    color: #fff;
+    background-color: #ff4646;
+}
+
+
+
+
+.dashboard .page {
+    flex: 1;
+    height: 100vh;
+    background-color: #F0F1F3;
+    padding: 0px 10px;
+    overflow: scroll;
+}
+
+.dashboard .page::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .dashboard .page {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+.dashboard .page .page__top {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(82, 81, 81, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.dashboard .page .page__top h6 {
+    color: #303030;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dashboard .page .page__top .page__search {
+    background-color: #F0F1F3;
+    border-radius: 20px;
+}
+
+.dashboard .page .page__top .page__search input {
+    outline-style: none;
+    outline-width: 0px;
+    border-style: none;
+    background: transparent;
+    padding: 5px 15px;
+    width: 200px;
+    font-weight: 500;
+    color: #303030;
+}
+
+.dashboard .page .page__top .page__search button {
+    outline-style: none;
+    outline-width: 0px;
+    border-style: none;
+    color: #fff;
+    background-color: #5C4E8E;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.dashboard .page .page__top .page__search button:hover {
+    background-color: #7766b4;
+}
+
+.dashboard .page .page__top > a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #7766b4;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #7766b4;
+}
+
+.dashboard .page .page__top > a:hover {
+    color: #7766b4;
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+.dashboard .page .page__numbers {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.dashboard .page .page__numbers .data {
+    padding: 10px;
+    background-color: #5c4e8e46;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(82, 81, 81, 0.2);
+    border-left: 3px solid #7766b4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 100ms ease-in;
+}
+
+.dashboard .page .page__numbers .data:hover {
+    transform: scale(1.02);
+}
+
+.dashboard .page .page__numbers .data h1 {
+    font-size: 4rem;
+}
+
+.dashboard .page .page__numbers .data {
+
+}
+
+.dashboard .page .members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.dashboard .page .members .member__card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(82, 81, 81, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .page .members .member__card img {
+    width: 70px;
+    border-radius: 50%;
+    border: 4px solid #5c4e8e46;
+    border-left: 4px solid #5C4E8E;
+    border-right: 4px solid #5C4E8E;
+}
+
+.dashboard .page .members .member__card .member__card__info {
+    flex: 1;
+}
+
+.dashboard .page .members .member__card h3 {
+    color: #303030;
+}
+
+
+.dashboard .page .members .member__card p {
+    color: #404040;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.dashboard .page .members .member__card p > span {
+    color: #404040;
+    font-weight: 700;
+}
+
+.dashboard .page .members .member__card .batch {
+    background-color: #5C4E8E;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 40px;
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    transform: rotate(45deg);
+}
+
+.dashboard .page .members .member__card .red {
+    background-color: #ff4646;
+}
+
+.dashboard .page .members .member__card .button__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.dashboard .page .members .member__card .button__group .button {
+    outline-style: none;
+    outline-width: 0px;
+    border-style: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 3px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dashboard .page .members .member__card .button__group .button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.dashboard .page .members .member__card .button__group .update {
+    background-color: #54e346;
+    color: #fff;
+}
+
+.dashboard .page .members .member__card .button__group .update a {
+    background-color: #54e346;
+}
+
+.dashboard .page .members .member__card .button__group .update:hover{
+    color: #54e346;
+    background-color: #fff;
+}
+
+.dashboard .page .members .member__card .button__group .update:hover a{
+    color: #54e346;
+    background-color: #fff;
+}
+
+.dashboard .page .members .member__card .button__group .delete {
+    background-color: #ff4646;
+}
+
+.dashboard .page .members .member__card .button__group .delete a {
+	color: #fff;
+}
+
+.dashboard .page .members .member__card .button__group .delete:hover {
+    color: #ff4646;
+    background-color: #fff;
+}
+
+.dashboard .page .members .member__card .button__group .delete:hover a {
+	color: #ff4646;
+    background-color: #fff;
+}
+
+.dashboard .page .members .member__card .button__group .renew {
+    background-color: #404040;
+}
+
+.dashboard .page .members .member__card .button__group .renew:hover {
+	color: #404040;
+	background: transparent;
+} 
+
+.dashboard .page .members .member__card .button__group .renew:hover a {
+	color: #404040;
+}
+
+
+/* add member start */
+
+
+/* add member end */

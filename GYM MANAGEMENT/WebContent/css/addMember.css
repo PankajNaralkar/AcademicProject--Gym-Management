@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+}
+
+body {
+    overflow: scroll;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+.add__member {
+    position: relative;
+    border-left: 5px solid #7766b4;
+    padding: 20px;
+    width: 70%;
+    margin: 20px 0px;
+    background-color: #5c4e8e46;
+    /* background-image: linear-gradient(to bottom,#0BB6EC, #098BE1, #085CD6); */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.add__member > h1 {
+    font-size: 4rem;
+}
+
+.raben {
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+    right: -50px;
+    transform: rotate(45deg);
+    width: 200px;
+}
+
+.raben img {
+    height: 50px;
+}
+
+.add__member form .input {
+    margin-top: 20px;
+}
+
+.add__member form .input label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.add__member form .input input[type=text], input[type=date], input[type=number] {
+    width: 98%;
+    outline-style: none;
+    outline-width: 0px;
+    border-style: none;
+    height: 40px;
+    padding: 0px 1%;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.add__member form .radio  {
+    color: #7766b4;
+    background-color: #7766b4;
+    height: 15px;
+    width: 15px;
+    padding: 0px 1%;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.add__member form .input span {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 15px;
+    color: #404040;
+}
+
+.add__member form .input select {
+    width: 100%;
+    outline-style: none;
+    outline-width: 0px;
+    border-style: none;
+    height: 40px;
+    padding: 0px 1%;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.add__member form .input .radio__grp {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.btn__grp {
+    margin-top: 30px;
+}
+
+.btn__grp .btn {
+    outline-style: none;
+    outline-width: 0px;
+    border-style: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 3px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn__grp .btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn__grp .green {
+    background-color: #7766b4;
+}
+.btn__grp .red {
+    background-color: #ff4646;
+}

@@ -1,0 +1,237 @@
+/* purple color : ac2b89 */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+    body::-webkit-scrollbar {
+        display: none;
+      }
+      
+      body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+
+.navbar {
+    background-color: #fff;
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px ;
+}
+
+.navbar {
+    cursor: pointer;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    padding: 28px 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #612952;
+    transition: background-color 200ms ease-in, color 200ms ease-in;
+}
+
+.navbar .links a:hover {
+    background-color: #612952;
+    color: #fff;
+}
+
+
+
+.navbar .links a:last-child {
+    background-color: #612952;
+    color: #fff;
+}
+
+
+.title {
+    height: 480px;
+    width: 100%;
+    position: relative;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhzNggsQ3ctHcF0fy1jz3IAuG5V2dVL1e7Q&usqp=CAU");
+    background-size: cover;
+    background-position: right;
+    /* background-color: #612952;
+    background-blend-mode: soft-light; */
+}
+
+.title .clip {
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 19% 100%, 61% 0, 21% 0, 0 46%, 0 0);
+    opacity: 0.85;
+    background-color: orange;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.title__text {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    z-index: 1;
+    cursor: pointer;
+} 
+
+.title__text h1 {
+    color: #612952;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 6rem;
+}
+
+.title__text h4 {
+    padding-bottom: 15px;
+    color: #fff;
+    font-size: 30px;
+    display: inline;
+    border-bottom: 5px solid #612952;
+}
+
+.title__text__button {
+    margin: 30px 0px;
+}
+.title__text__button button {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 8px;
+    outline-style: none;
+    outline-width: 0px;
+    border-style: none;
+    margin-right: 10px;
+    border: 2.5px solid #612952;
+}
+
+.title__text__button .button1 {
+    background-color: #612952;
+    color: #fff;
+}
+
+.title__text__button .button2 {
+    background-color: transparent;
+    color: #612952;
+}
+
+.title__text__button .button2:hover {
+    background-color: #612952;
+    color: white;
+}
+
+
+
+
+
+.slogan {
+    padding: 100px 100px;
+    text-align: center;
+}
+
+.slogan h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #303030;
+    text-shadow: 0px 5px 8px rgba(48, 46, 46, 0.5);
+}
+
+.slogan h1 .red {
+    color: red;
+}
+
+.slogan h1 .orange {
+    color: orange;
+}
+
+.slogan h3 {
+    font-size: 30px;
+    color: #404040;
+    text-shadow: 0px 5px 8px rgba(48, 46, 46, 0.5);
+}
+
+.slogan h4 {
+    font-size: 23px;
+    color: #404040;
+}
+
+.slogan h4 .orange {
+    color: orange;
+}
+
+.button__group {
+    margin: 20px 0px;
+}
+
+.button__group button {
+    outline-style: none;
+    outline-width: 0px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #612952;
+    color: #fff;
+    padding: 15px 35px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(48, 46, 46, 0.2);
+}
+
+
+
+
+.intro {
+    padding: 150px 100px;
+    background-image: url("../project__images/bac4.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.intro .clip {
+    -webkit-clip-path: polygon(0 0, 52% 0, 33% 100%, 0% 100%);
+clip-path: polygon(0 0, 52% 0, 33% 100%, 0% 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    z-index: 0;
+}
+
+.intro .text {
+    position: relative;
+    width: 37%;
+    z-index: 1;
+}
+
+.intro .text h1 {
+    font-size: 3.7rem;
+    font-weight: 800;
+    color: #612952;
+    margin-bottom: 10px;
+}
+
+.intro .text p {
+    font-size: 25px;
+    color: #303030;
+    font-weight: 500;
+}
+
+
+
+.footer {
+    margin-top: 30px;
+    background-color: #303030;
+    color: lightgray;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
